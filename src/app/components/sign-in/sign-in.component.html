@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="body">
+        <img class="logo" src="../../../assets/img/perfil-del-usuario.png" alt="img-login">
+        <h1>Registrar Usuario</h1>
+        <div class="form-floating mb-3 mt-3">
+            <input type="text" [(ngModel)]="username" class="form-control" placeholder="Ingrese Usuario">
+            <label>Usuario</label>
+          </div>
+          <div class="form-floating  mb-3">
+            <input type="password" [(ngModel)]="password" class="form-control" placeholder="Ingrese Password">
+            <label>Password</label>
+          </div>
+          <div class="form-floating  mb-3">
+            <input type="password" [(ngModel)]="confirmPassword" class="form-control" placeholder="Repetir Password">
+            <label>Password</label>
+          </div>
+        <div class="d-grid gap-3">
+        <button type="button" (click)="addUser()" class="btn btn-primary btn-lg">Ingresar</button>
+        </div>
+        <a routerLink="/login">Volver</a>
+    </div>
+</div>
